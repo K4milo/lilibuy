@@ -1,0 +1,45 @@
+// Home True Slider
+.slider {
+	&__wrapper {
+		
+		&.slick-dotted.slick-slider {
+			margin-bottom: 0;
+		}
+
+		&-item {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			&--caption{
+				
+				@include mq('md') {
+					
+				}
+				h2 {
+					@include mq('md') {
+					}
+				}
+			}
+		}
+
+		// Navigation
+		.slick-dots {
+			text-align: center;
+			width: 100%;
+			bottom: rem(25px);
+			> li {
+				display:inline-block;
+				vertical-align: middle;
+				margin: 0 rem(5px);
+				width: rem(14px);
+				height: rem(14px);
+				border-radius: 100%;
+				background-color: $white;
+				&.slick-active {
+					background-color: $skin;
+				}
+			}
+		}
+	}
+}

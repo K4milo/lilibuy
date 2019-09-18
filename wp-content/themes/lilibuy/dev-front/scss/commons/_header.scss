@@ -1,0 +1,103 @@
+.site-header {
+	padding: 0 0;
+	.navbar {
+		position: relative;
+		margin: 0 0 0 0;
+		border-radius: 0;
+		border: none;
+		background-color: $pink;
+		height: auto;
+		transition: all 0.5s;
+		
+		// Scrolled menu styles
+		&.scroll_menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: $white;
+			border-bottom: rem(2px) solid $pink;	
+			z-index: 999;
+			// Stycky logo
+			.navbar-brand {
+				h1 {
+					width: rem(87px);
+					height: rem(70px);
+					margin: rem(5px) 0;
+					transition: all 0.3s;
+					@include iconBg('../images/brand/logo-icon.png');
+				}
+			}
+		}
+
+		// desktop layout fix
+		.row-header {
+			@include wrapper;
+			@include mq('sm') {				
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 rem(35px);
+			}
+		}
+
+		&-header {
+			width: 100%;
+			float: none;
+			@include mq('sm') {
+				width: auto;
+			}	
+		}
+
+		&-brand {
+			float: none;
+			padding: 0 0;
+			margin: 0 0;
+			height: auto;
+			font-size: 0;
+			@include mq('sm') {
+				margin-left: 0 !important;
+			}
+			h1 {
+				padding: 0 0;
+				margin: rem(10px) 0;
+				font-size: 0;
+				width: rem(118px);
+				height: rem(90px);
+				@include iconBg('../images/brand/logo.png');
+			}
+		}
+
+		&-collapse {
+			float: none;
+			@include mq('sm') {
+				display: inherit !important;
+			}
+			// Menu
+			ul {
+				&.navbar-nav {
+					
+					> li {
+						@include mq('sm') {
+							display: inline-block;
+						}
+						> a {
+							color: $brown;
+							@include font(18px);
+							&:hover,
+							&:focus {
+								background-color: transparent;
+							}
+						}
+						&.active {				
+							a {
+								color: $brown;
+								background-color: transparent;
+							}					
+						}
+					}
+				}
+			}
+		}
+	}
+}
