@@ -101,3 +101,35 @@
 		}
 	}
 }
+
+// Social menu
+.menu-social {
+	&--social {
+		text-align: center;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			margin: rem(12px) rem(5px);
+			a {
+				display: block;
+				width: rem(35px);
+				height: rem(35px);
+				background-color: $brown;
+				border-radius: 100%;
+				&:hover {
+					background-color: $pink;
+				}
+			}
+			&.fb {
+				a {
+					@include iconBg('../images/icons/facebook.svg', 55%);
+				}				
+			}
+			&.ins {
+				a {
+					@include iconBg('../images/icons/instagram.svg', 55%);
+				}				
+			}
+		}
+	}
+}
