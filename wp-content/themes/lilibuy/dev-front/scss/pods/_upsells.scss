@@ -7,6 +7,9 @@
 			margin: rem(40px) auto;
 			text-align: center;
 			border-top: rem(1px) solid $gray-lt;
+			@include mq('md') {
+				margin-top: rem(90px);
+			}
 			h2 {
 				color: $brown;
 				font-family: $bd;
@@ -54,13 +57,15 @@
 					}
 					.woocommerce-loop-product {
 						&__title {
-							@include font(24px);
-							color: $skin-2;
+							@include font(20px);
+							color: $pink-dk;
 							font-family: $bd;
 						}
 					}
 					.woocommerce-Price-amount {
 						&.amount {
+							color: $brown;
+							font-family: $m-sb;
 							@include font(18px);	
 						}
 					}

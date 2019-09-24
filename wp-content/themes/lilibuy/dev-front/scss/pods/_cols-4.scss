@@ -35,13 +35,15 @@ body {
 								}
 								.woocommerce-loop-product {
 									&__title {
-										@include font(24px);
-										color: $skin-2;
+										@include font(20px);
+										color: $pink-dk;
 										font-family: $bd;
 									}
 								}
 								.woocommerce-Price-amount {
 									&.amount {
+										color: $brown;
+										font-family: $m-sb;
 										@include font(18px);	
 									}
 								}

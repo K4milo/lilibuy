@@ -1,6 +1,12 @@
 body {
 	&.storefront-full-width-content,
 	&.single-product {
+
+		// Hide prod navigation
+		.storefront-product-pagination {
+			display: none;
+		}
+
 		div {
 			&#primary {
 				@include wrapper;
@@ -66,7 +72,7 @@ body {
 								p {
 									&.price {
 										font-family: $bd;
-										color: $skin;
+										color: $pink-dk;
 										@include font(30px);	
 										margin: rem(12px) 0;
 									}
