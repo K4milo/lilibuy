@@ -50,7 +50,15 @@
 		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 		                'walker'            => new wp_bootstrap_navwalker())
 		            );
-		        ?>   
+		        ?> 
+		        <div class="menu-social">  
+		        	<?php
+		        	    wp_nav_menu( array(
+		        	        'theme_location'    => 'social-menu',
+		        	        'menu_class'        => 'menu-social--social')
+		        	    );
+		        	?> 
+		        </div>
 		      </div><!-- /.navbar-collapse -->
 		    </div>
 		  </div><!-- /.container -->

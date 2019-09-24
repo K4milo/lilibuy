@@ -1,0 +1,71 @@
+.up-sells {
+	&.upsells {
+		&.products {
+			@include wrapper;
+			padding-right: 0;
+			width: 100%;
+			margin: rem(40px) auto;
+			text-align: center;
+			border-top: rem(1px) solid $gray-lt;
+			h2 {
+				color: $brown;
+				font-family: $bd;
+				text-transform: uppercase;
+				position: relative;
+				@include font(30px);
+				display: inline-block;
+				padding-bottom: rem(16px);
+				margin-bottom: rem(18px);
+				&::after {
+					content: "";
+					width: rem(120px);
+					height: rem(5px);
+					background-color: $pink;
+					@include center('horizontal');
+					bottom: 0;
+				}
+			}
+			@include mq('md') {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+
+			li {
+				&.product {
+					float: none;
+					width: 100%;
+					margin: rem(16px) auto;
+					padding: rem(16px);
+					border: rem(1px) solid $gray-lt;
+					transition: all 0.32s;
+					@include mq('md') {
+						width: 23%;
+						display: inline-flex;
+						margin-left: 0;
+						&:hover {
+							box-shadow: 0 0 rem(12px) $gray;
+						}
+					}
+					a {
+						&:hover{
+							text-decoration: none;
+						}
+					}
+					.woocommerce-loop-product {
+						&__title {
+							@include font(24px);
+							color: $skin-2;
+							font-family: $bd;
+						}
+					}
+					.woocommerce-Price-amount {
+						&.amount {
+							@include font(18px);	
+						}
+					}
+				}
+			}
+		}
+	}
+}

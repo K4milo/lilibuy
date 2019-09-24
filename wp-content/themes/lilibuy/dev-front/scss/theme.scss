@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 // ------------------------ //
 // -- Commons -- //
@@ -8,16 +8,24 @@
 @import 'commons/mixins';
 @import 'commons/general';
 @import 'commons/header';
+@import 'commons/headers';
 @import 'commons/footer';
 
 // -- Vendors -- //
 @import 'vendors/slick/slick';
 @import 'vendors/awesome/fontawesome';
 
+// ------------------------ //
+// -- Components -- //
+// ------------------------ //
+@import 'components/sorting';
+@import 'components/breadcrumb';
 
 // ------------------------ //
-// -- Loops -- //
+// -- Pods -- //
 // ------------------------ //
+@import 'pods/cols-4';
+@import 'pods/upsells';
 
 // ------------------------ //
 // -- Blocks -- //
@@ -27,3 +35,4 @@
 // ------------------------ //
 // -- Pages -- //
 // ------------------------ //
+@import 'pages/single-product';

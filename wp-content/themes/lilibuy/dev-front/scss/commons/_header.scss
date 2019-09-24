@@ -72,11 +72,18 @@
 			float: none;
 			@include mq('sm') {
 				display: inherit !important;
+				> div {
+					display: inline-block;
+					vertical-align: middle;
+				}
 			}
 			// Menu
 			ul {
 				&.navbar-nav {
-					
+					@include mq('sm') {
+						float: none;
+						margin: inherit;
+					}
 					> li {
 						@include mq('sm') {
 							display: inline-block;
@@ -104,12 +111,21 @@
 
 // Social menu
 .menu-social {
+	max-height: rem(40px);
 	&--social {
 		text-align: center;
+		padding: 0 0;
+		margin: 0 0;
+		@include mq('sm') {
+			margin-top: rem(7px);
+		}
 		li {
 			display: inline-block;
 			vertical-align: middle;
 			margin: rem(12px) rem(5px);
+			@include mq('sm') {
+				margin: 0 rem(5px);
+			}
 			a {
 				display: block;
 				width: rem(35px);

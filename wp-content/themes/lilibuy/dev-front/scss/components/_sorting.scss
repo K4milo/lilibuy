@@ -1,0 +1,45 @@
+body {
+	.storefront-sorting {
+		@include wrapper;
+		
+		.woocommerce-ordering {
+			@include font(16px);
+			color: $brown;
+			select {
+				padding: rem(12px);
+				border: rem(2px) solid $skin;
+			}
+			&::after {
+				color: $brown;
+			}
+		}
+		p {
+			&.woocommerce-result-count {
+				@include font(16px);
+				@include mq('md') {
+					margin-top: rem(12px);
+					color: $brown;
+				}
+			}
+		}
+
+		.woocommerce-pagination {
+			.page-numbers {
+				li {
+					span {
+						&.current {
+							background-color: $skin;
+							color: $white;
+							font-family: $bd;
+						}
+					}
+					a {
+						background-color: rgba($pink,0.5);
+						color: $brown;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}
