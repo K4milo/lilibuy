@@ -25,7 +25,7 @@ get_header();
 			 * @hooked storefront_on_sale_products      - 60
 			 * @hooked storefront_best_selling_products - 70
 			 */
-				echo do_shortcode( '[recent_products per_page="12" columns="4" orderby="date" order="DESC"]' );
+				echo do_shortcode( '[recent_products per_page="12" columns="4"]' );
 			?>
 
 		</main><!-- #main -->

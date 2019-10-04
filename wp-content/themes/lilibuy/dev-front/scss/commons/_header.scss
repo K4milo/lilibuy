@@ -30,6 +30,21 @@
 			}
 		}
 
+		// Button
+		&-toggle {
+			float: none;
+			border: none;
+			@include mq('sm') {
+				display: none;
+			}
+			span {
+				&.icon-bar {
+					background-color: $brown;
+					height: rem(3px);
+				}
+			}
+		}
+
 		// desktop layout fix
 		.row-header {
 			@include wrapper;
@@ -44,7 +59,10 @@
 		&-header {
 			width: 100%;
 			float: none;
+			display: flex;
+			flex-direction: row-reverse;
 			@include mq('sm') {
+				display: block;
 				width: auto;
 			}	
 		}
@@ -55,6 +73,7 @@
 			margin: 0 0;
 			height: auto;
 			font-size: 0;
+			flex-grow: 2;
 			@include mq('sm') {
 				margin-left: 0 !important;
 			}
@@ -62,15 +81,21 @@
 				padding: 0 0;
 				margin: rem(10px) 0;
 				font-size: 0;
-				width: rem(118px);
-				height: rem(90px);
+				width: rem(87px);
+				height: rem(70px);
 				@include iconBg('../images/brand/logo.png');
+				@include mq('md') {					
+					width: rem(118px);
+					height: rem(90px);
+				}
 			}
 		}
 
 		&-collapse {
 			float: none;
+			padding: rem(16px) rem(20px) rem(30px);
 			@include mq('sm') {
+				padding: initial;
 				display: inherit !important;
 				> div {
 					display: inline-block;

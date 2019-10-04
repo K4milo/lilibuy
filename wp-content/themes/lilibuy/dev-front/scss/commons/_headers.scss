@@ -24,19 +24,18 @@ body {
 				}
 			}
 
+			&.entry-header,
 			&.woocommerce-products-header {
 				text-align: center;
 				position: relative;
 				padding-bottom: rem(16px);
 				margin-bottom: rem(18px);
-				h1 {
-					&.page-title {
-						color: $brown;
-						font-family: $bd;
-						text-transform: uppercase;
-						padding: 0 0; 
-						@include font(30px);
-					}
+				h1 {					
+					color: $brown;
+					font-family: $bd;
+					text-transform: uppercase;
+					padding: 0 0; 
+					@include font(30px);					
 				}
 				&::after {
 					content: "";

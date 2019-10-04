@@ -1,0 +1,59 @@
+.footer {
+	text-align: center;
+	background-color: $pink;
+	color: $brown;
+	padding: rem(20px) 0 0;
+	&-row {
+		.nav_menu-2 {
+			h4 {
+				display: none;
+			}
+			ul {
+				padding: rem(10px) 0;
+				margin-bottom: rem(16px);
+				li {
+					display: inline-block;
+					vertical-align: middle;
+					margin: rem(12px) rem(5px);
+					padding: 0 0;
+					&::before,
+					&::after {
+						display: none;
+					}
+					@include mq('sm') {
+						margin: 0 rem(5px);
+					}
+					a {
+						display: block;
+						width: rem(35px);
+						height: rem(35px);
+						background-color: $brown;
+						border-radius: 100%;
+						&:hover {
+							background-color: $pink-dk;
+						}
+					}
+					&.fb {
+						a {
+							@include iconBg('../images/icons/facebook.svg', 55%);
+						}				
+					}
+					&.ins {
+						a {
+							@include iconBg('../images/icons/instagram.svg', 55%);
+						}				
+					}
+				}
+			}
+		}
+	}
+
+	&-copyright {
+		background-color: $pink-dk;
+		padding: rem(10px);
+		a,
+		p {
+			color: $white;
+		}
+	}
+}

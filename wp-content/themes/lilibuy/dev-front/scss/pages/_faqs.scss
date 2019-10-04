@@ -1,0 +1,17 @@
+body {
+	&.page-id-336 {
+		.site-content {
+			color: $brown;
+			h2,h3 {
+				font-family: $m-bd;
+			}
+			a,
+			h3 {
+				color: $pink-dk;
+			}
+			.entry-header{
+				margin-bottom: rem(30px);
+			}
+		}
+	}
+}

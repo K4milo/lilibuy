@@ -1,0 +1,33 @@
+table {
+	color: $brown;
+	thead {
+		border: rem(1px) solid $brown;
+		padding: rem(12px);
+		background-color: $pink;
+		tr {			
+			td {				
+				font-family: $m-bd;
+				h3 {
+					text-align: center;
+					margin: 0;
+				}
+			}
+		}
+
+	}
+	
+	&#sizes-man {
+		thead {
+			background-color: $blue-lt;
+		}		
+	}
+
+	tbody {
+		tr {
+			td {
+				border: rem(1px) solid $brown;
+				padding: rem(12px);
+			}
+		}
+	}
+}

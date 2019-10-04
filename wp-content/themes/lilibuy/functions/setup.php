@@ -90,3 +90,12 @@ if ( ! function_exists( 'bst_pagination' ) ) {
 		}
 	}
 }
+
+/// Woocomerces snippets
+add_filter('gettext', 'change_ymal');
+
+function change_ymal($translated) 
+{
+	$translated = str_ireplace('You may also like', 'También te recomendamos', $translated);
+	return $translated; 
+}

@@ -20,6 +20,8 @@
 // ------------------------ //
 @import 'components/sorting';
 @import 'components/breadcrumb';
+@import 'components/tables';
+@import 'components/chat';
 
 // ------------------------ //
 // -- Pods -- //
@@ -36,3 +38,5 @@
 // -- Pages -- //
 // ------------------------ //
 @import 'pages/single-product';
+@import 'pages/size';
+@import 'pages/faqs';

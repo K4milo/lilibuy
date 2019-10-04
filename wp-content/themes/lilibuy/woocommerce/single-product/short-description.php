@@ -30,4 +30,5 @@ if ( ! $short_description ) {
 ?>
 <div class="woocommerce-product-details__short-description">
 	<?php echo $short_description; // WPCS: XSS ok. ?>
+	<a href="https://api.whatsapp.com/send?phone=573105589410&text=Quiero%20adquirir%20este%20producto%20<?php the_permalink(); ?>" class="btn btn-buy" target="_blank">Comprar</a>
 </div>

@@ -78,6 +78,22 @@ body {
 									}
 								}
 
+								.btn {
+									&.btn-buy {
+										display: inline-block;
+										border-radius: 0;
+										margin-top: rem(16px);
+										background-color: $pink-dk;
+										color: $white;
+										font-family: $bd;
+										text-transform: uppercase;
+										@include font(18px);
+										&:hover {
+											background-color: $pink;
+										}
+									}
+								}
+
 								.product_meta {
 									display: none;
 								}
