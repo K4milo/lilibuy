@@ -6,21 +6,23 @@ body {
 					&.columns-4 {
 						@include wrapper;
 						padding-right: 0;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
 						@include mq('md') {
-							display: flex;
-							flex-wrap: wrap;
-							justify-content: space-around;
+							flex-direction: row;
+							justify-content: flex-start;
 						}
-
 						li {
 							&.product {
 								float: none;
-								width: 100%;
-								margin: rem(16px) auto;
+								width: 47%;
+								margin: rem(16px) 0;
 								padding: rem(16px);
 								border: rem(1px) solid $gray-lt;
 								transition: all 0.32s;
 								@include mq('md') {
+									margin: rem(16px);
 									width: 23%;
 									display: inline-flex;
 									margin-left: 0;
@@ -45,6 +47,27 @@ body {
 										color: $brown;
 										font-family: $m-sb;
 										@include font(18px);	
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// Man catalog
+		&.term-hombre {
+			ul {
+				&.products {
+					&.columns-4 {
+						
+						li {
+							&.product {
+								.woocommerce-loop-product {
+									&__title {
+										color: $blue;
+										font-family: $bd;
 									}
 								}
 							}

@@ -48,4 +48,24 @@ body {
 			}
 		}
 	}
+	&.term-hombre {
+		header {
+			&.site-main {
+				&__header {
+					
+					&::after {
+						background-color: $blue;
+					}
+				}
+			}
+
+			&.entry-header,
+			&.woocommerce-products-header {
+				
+				&::after {
+					background-color: $blue;
+				}
+			}
+		}
+	}
 }

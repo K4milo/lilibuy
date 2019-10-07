@@ -127,6 +127,29 @@
 								background-color: transparent;
 							}					
 						}
+						&:hover {
+							.dropdown-menu {
+								@include mq('sm') {
+									display: block;
+								}
+							}
+						}
+						.dropdown-menu {
+							padding: 0 0;
+							margin: 0 0;
+							li {
+								background-color: $pink;
+								a {
+									padding: rem(16px);
+								}
+								&.active {
+									a {
+										background-color: $pink-dk;
+										color: $white;
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -171,6 +194,53 @@
 				a {
 					@include iconBg('../images/icons/instagram.svg', 55%);
 				}				
+			}
+		}
+	}
+}
+
+// MAN MENU
+body {
+	&.term-hombre {
+		.navbar {
+			background-color: $blue-lt;
+			.navbar-brand {
+				h1 {
+					@include iconBg('../images/brand/lili-men.svg');
+					background-size: 84%;
+				}
+			}
+
+			// Dropdown
+			.navbar-collapse {
+				ul.navbar-nav > li {
+					ul.dropdown-menu {
+						padding: 0 0;
+						margin: 0 0;
+						li {
+							background-color: $white;
+							a {
+								color: $blue;
+							}
+							&.active {
+								a {
+									background-color: $blue;
+									color: $white;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// Scrolled menu styles
+			&.scroll_menu {
+				border-color: $blue;
+				.navbar-brand {
+					h1 {
+						@include iconBg('../images/brand/lili-men-scroll.svg');
+					}
+				}	
 			}
 		}
 	}
