@@ -2,14 +2,21 @@ table {
 	color: $brown;
 	thead {
 		border: rem(1px) solid $brown;
-		padding: rem(12px);
 		background-color: $pink;
+		padding: rem(8px);
+		@include mq('md') {
+			padding: rem(12px);
+		}
 		tr {			
 			td {				
 				font-family: $m-bd;
 				h3 {
 					text-align: center;
 					margin: 0;
+					@include font(12px);
+					@include mq('md') {
+						@include font(22px);
+					}
 				}
 			}
 		}
@@ -25,8 +32,13 @@ table {
 	tbody {
 		tr {
 			td {
-				border: rem(1px) solid $brown;
-				padding: rem(12px);
+				border: rem(1px) solid $brown;				
+				@include font(11px);
+				padding: rem(6px);
+				@include mq('md') {
+					padding: rem(12px);
+					@include font(16px);
+				}
 			}
 		}
 	}
